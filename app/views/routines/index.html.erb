@@ -1,0 +1,16 @@
+<div class="routine-main">
+  <section class="routine-card">
+    <% routines = @routines.includes(:exercises) %>
+      <% routines.each do |routine|%>
+        <div class="routine-info">
+          <p class="routine-title">Title: <%= routine.title %></p>
+          <p>Exercises: </p>
+          <% routine.exercises.each do |exercise|%>
+          <p>Title: <%= exercise.description %> </p>
+          <p>Intensity: <%= exercise.intensity %> </p>
+          <hr/>
+          <% end %>
+        </div>
+      <% end %>
+  </section>
+</div>

@@ -1,0 +1,34 @@
+.routine-card {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+}
+
+.routine-info {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0 10px;
+}
+
+.routine-info p {
+  margin: 10px;
+}
+
+hr {
+  width: 50%;
+}
+
+.routine-title {
+  font-weight: bold;
+}
